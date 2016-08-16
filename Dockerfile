@@ -26,6 +26,6 @@ RUN buildDeps='gcc libc6-dev make git ca-certificates'; \
 
 COPY docker /
 
-CMD [ "disque-server" ]
+CMD [ "disque-server", "/etc/disque/disque.conf" ]
 
 EXPOSE 7711 17711
